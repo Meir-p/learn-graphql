@@ -328,7 +328,7 @@ const IndexPage = () => {
 }
 
 - export default IndexPage
-+ export default withApollo()(IndexPage)
++ export default withApollo({ ssr: true })(IndexPage)
 ```
 
 That's it. Our Next.js app is now configured with Apollo Client to talk to Hasura APIs.
